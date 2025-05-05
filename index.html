@@ -1,60 +1,153 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PismoHelp24 – Urzędowy Ratunek online</title>
-<style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;}
-header{background:#0069c0;color:#fff;padding:40px 20px;text-align:center;}
-section{padding:40px 20px;max-width:900px;margin:auto;}
-h1,h2{margin:0 0 20px;}
-.price-table{list-style:none;padding:0;}
-.price-table li{margin:10px 0;font-size:1.1em;}
-.cta{background:#ff4d4d;color:#fff;padding:15px 30px;display:inline-block;text-decoration:none;border-radius:5px;margin-top:20px;}
-footer{background:#f0f0f0;padding:20px;text-align:center;font-size:.9em;}
-img.logo{max-width: 300px;margin-bottom: 20px;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PismoHelp24 – Urzędowy Ratunek online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1581090700227-1e7e84f85d3e?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    header img.logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    header p {
+      font-size: 1.2em;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: #ff5722;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background: #e64a19;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-size: 2em;
+      color: #1976d2;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #1976d2;
+      margin-top: 6px;
+    }
+    .price-table {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .price-table li {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 1.1em;
+    }
+    .price-table li:last-child {
+      border-bottom: none;
+    }
+    footer {
+      background: #004ba0;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95em;
+    }
+    footer a {
+      color: #ffccbc;
+      text-decoration: none;
+    }
+    .illustration {
+      max-width: 100%;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-<header>
+  <header>
     <img src="PismoHelp24_logo.png" alt="Logo PismoHelp24" class="logo">
     <h1>PismoHelp24</h1>
-    <p>Urzędowy Ratunek online</p>
+    <p>Urzędowy Ratunek online – szybko, jasno, po polsku</p>
     <a class="cta" href="mailto:pismohelp24@gmail.com">Napisz do mnie</a>
-</header>
-<section>
-    <h2>Dlaczego warto?</h2>
-    <p>Szybko tłumaczę niemieckie decyzje i pisma, piszę gotowe odwołania. Odpowiadam w 24–48 h – po polsku, mailowo, bez stresu.</p>
-</section>
-<section>
-    <h2>Usługi i ceny</h2>
-    <ul class="price-table">
-        <li><strong>Odpowiedź na pytanie (e‑mail):</strong> 10–15 €</li>
-        <li><strong>Gotowe pismo (odwołanie, wniosek):</strong> 15–25 €</li>
-        <li><strong>Wyjaśnienie pisma (2 str.):</strong> 15 €</li>
-        <li><strong>Wzór PDF:</strong> 5–10 €</li>
-    </ul>
-    <a class="cta" href="mailto:pismohelp24@gmail.com">Zamów teraz</a>
-</section>
-<section id="disclaimer">
-    <h2>Disclaimer (§ 2 RDG)</h2>
-    <p>Usługa stanowi Schreib‑ &amp; Übersetzungsservice (§ 5 RDG). Nie świadczę porad prawnych.</p>
-</section>
-<section id="impressum">
-    <h2>Impressum (§ 5 TMG)</h2>
-    <p>Imię i nazwisko<br>
-    [Adres w Niemczech]<br>
-    E‑mail: pismohelp24@gmail.com<br>
-    Kleinunternehmer gem. § 19 UStG</p>
-</section>
-<section id="datenschutz">
-    <h2>Datenschutz­erklärung (skrót)</h2>
-    <p>Dane przekazane w e‑mailu używane są wyłącznie do realizacji zlecenia i wystawienia rachunku. Nie udostępniam ich osobom trzecim.</p>
-</section>
-<footer>
-    PismoHelp24 © 2025 – Twoje problemy z niemieckimi urzędami kończą się tutaj.<br>
+  </header>
+
+  <main>
+    <section>
+      <h2>Dlaczego warto?</h2>
+      <p>Tłumaczę i wyjaśniam decyzje z niemieckich urzędów. Przygotowuję gotowe pisma i odwołania. Wszystko mailowo, po polsku, w 24–48 godzin.</p>
+      <img class="illustration" src="https://images.unsplash.com/photo-1581091870683-3fd9f74b40d8?auto=format&fit=crop&w=1050&q=80" alt="Urzędnik przy biurku">
+    </section>
+
+    <section>
+      <h2>Usługi i ceny</h2>
+      <ul class="price-table">
+        <li><strong>Odpowiedź na pytanie (e-mail):</strong> 10–15 €</li>
+        <li><strong>Gotowe pismo (odwołanie, wniosek):</strong> 15–25 €</li>
+        <li><strong>Wyjaśnienie pisma (do 2 stron):</strong> 15 €</li>
+        <li><strong>Wzór dokumentu (PDF):</strong> 5–10 €</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Jak to działa?</h2>
+      <p>1. Wyślij skan lub opis na: <strong>pismohelp24@gmail.com</strong><br>
+         2. Otrzymasz wycenę i termin (zwykle 24–48 h)<br>
+         3. Po potwierdzeniu i opłacie wysyłam gotowy dokument</p>
+    </section>
+
+    <section>
+      <h2>Disclaimer (§ 2 RDG)</h2>
+      <p>Usługa stanowi Schreib- & Übersetzungsservice (§ 5 RDG). Nie świadczę porad prawnych.</p>
+    </section>
+
+    <section>
+      <h2>Impressum (§ 5 TMG)</h2>
+      <p>E-mail: <a href="mailto:pismohelp24@gmail.com">pismohelp24@gmail.com</a><br>
+         Kleinunternehmer gem. § 19 UStG</p>
+    </section>
+  </main>
+
+  <footer>
+    PismoHelp24 © 2025<br>
     Kontakt: <a href="mailto:pismohelp24@gmail.com">pismohelp24@gmail.com</a>
-</footer>
+  </footer>
 </body>
 </html>
